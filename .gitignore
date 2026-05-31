@@ -25,3 +25,6 @@ output/*.json
 
 # Logs
 *.log
+
+# Logs
+*.log
