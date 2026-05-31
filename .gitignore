@@ -23,6 +23,9 @@ DEMO_GUIDE.md
 # Output
 output/*.json
 
+# Output
+output/*.json
+
 # Logs
 *.log
 

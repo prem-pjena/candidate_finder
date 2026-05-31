@@ -2,7 +2,7 @@
 
 > **Query:** *"Customer Success Manager, 3+ years, fintech / financial services background, in Bangalore or Delhi NCR."*
 
-This file shows the expected output format. Actual scores will vary depending on the LLM model used (local LM Studio models may produce different scores than what's shown here).
+This output was generated from a live run of the API using a local LM Studio model. Results will vary depending on the LLM model used.
 
 ---
 
@@ -10,62 +10,81 @@ This file shows the expected output format. Actual scores will vary depending on
 
 ```
 Rank | Name               | Title                         | Exp | Location     | Score | Reason
-─────┼────────────────────┼───────────────────────────────┼─────┼──────────────┼───────┼──────────────────────────────────────────────────────
-  1  | Suresh Nair        | Customer Success Manager      | 4yr | Delhi NCR    |  92   | CSM title matches, financial services industry,
-     |                    |                               |     |              |       | 4yr experience meets 3yr minimum, located in Delhi NCR
-  2  | Priya Sharma       | Customer Success Manager      | 5yr | Bangalore    |  90   | CSM in fintech, 5yr exp exceeds requirements,
-     |                    |                               |     |              |       | Bangalore location, relevant skills in CRM
-  3  | Amit Kumar         | Customer Success Manager      | 6yr | Remote       |  85   | CSM with 6yr exp, insurance background,
-     |                    |                               |     |              |       | Remote allows working in any location
-  4  | Rahul Verma        | Senior Customer Success Mgr   | 8yr | Delhi NCR    |  82   | Senior CSM title, excellent experience,
-     |                    |                               |     |              |       | software industry not fintech but transferable
-  5  | Deepika Reddy      | Customer Success Lead         | 7yr | Gurgaon      |  78   | CS Lead title, 7yr exp, IT industry,
-     |                    |                               |     |              |       | close to Delhi NCR, strong leadership skills
-  6  | Ananya Gupta       | Customer Success Associate    | 2yr | Mumbai       |  65   | CS title but Associate level, fintech industry,
-     |                    |                               |     |              |       | close to 3yr minimum, Mumbai not target city
-  7  | Vikram Patel       | Account Manager               |  —  | Bangalore    |  60   | Account Management overlaps with CSM,
-     |                    |                               |     |              |       | Bangalore location, missing experience data
-  8  | Maya Joshi         | Technical Support Specialist  | 3yr | Bangalore    |  55   | Customer-facing role, 3yr exp, Bangalore,
-     |                    |                               |     |              |       | but title not directly CSM-related
-  9  | Neha Singh         | Customer Success Specialist   | 4yr | Delhi NCR    |  75   | CS title, 4yr exp, Delhi NCR location,
-     |                    |                               |     |              |       | good communication skills
- 10  | Raj Kapoor         | Customer Success Lead         | 7yr | Gurgaon      |  76   | CS Lead, 7yr exp, close to Delhi NCR,
-     |                    |                               |     |              |       | strong analytics and planning skills
- 11  | Kavita Reddy       | Customer Success Manager      | 3yr | Bangalore    |  88   | Exact title match, 3yr exp meets minimum,
-     |                    |                               |     |              |       | financial services industry, Bangalore
- 12  | Arun Patel         | Customer Success Manager      | 5yr | Delhi NCR    |  87   | CSM title, 5yr exp, Delhi NCR,
-     |                    |                               |     |              |       | experience in client relationship management
- 13  | Sneha Gupta        | Senior Customer Success Mgr   | 6yr | Bangalore    |  84   | Senior CSM, 6yr exp, Bangalore,
-     |                    |                               |     |              |       | fintech background
- 14  | Manish Kumar       | Customer Success Specialist   | 4yr | Delhi NCR    |  72   | CS title, 4yr exp, Delhi NCR,
-     |                    |                               |     |              |       | some relevant skills but fintech experience missing
- 15  | Pooja Sharma       | Account Manager               | 5yr | Bangalore    |  62   | Account management is CSM-adjacent,
-     |                    |                               |     |              |       | 5yr exp, Bangalore, lacks fintech experience
- 16  | Rohan Verma        | Customer Success Associate    | 3yr | Bangalore    |  68   | CS Associate, 3yr exp meets minimum,
-     |                    |                               |     |              |       | Bangalore location, building CS skills
- 17  | Ankit Singh        | Customer Success Manager      | 4yr | Remote       |  80   | CSM title, 4yr exp, Remote is flexible,
-     |                    |                               |     |              |       | relevant customer onboarding skills
- 18  | Divya Patel        | Customer Success Lead         | 8yr | Bangalore    |  83   | CS Lead, 8yr exp exceeds requirements,
-     |                    |                               |     |              |       | Bangalore, strong leadership
- 19  | Nikhil Joshi       | Customer Success Manager      | 3yr | Noida        |  70   | CSM title, 3yr exp, Noida near Delhi NCR,
-     |                    |                               |     |              |       | industry not fintech
- 20  | Ishita Nair        | Customer Success Specialist   | 5yr | Delhi NCR    |  74   | CS title, 5yr exp, Delhi NCR location,
-     |                    |                               |     |              |       | good communication skills
+─────┼────────────────────┼───────────────────────────────┼─────┼──────────────┼───────┼─────────────────────────────────────────────────────────────────────────
+  1  | Arjun Menon        | Customer Success Manager      | 12yr| Remote       |  98   | Near perfect match: 12 years experience in financial services
+     |                    |                               |     |              |       | and remote location.
+  2  | Riya Chopra        | Senior Customer Success Mgr   |  4yr| Bangalore    |  95   | Excellent match: 4 years experience, relevant skills
+     |                    |                               |     |              |       | (Salesforce, Onboarding), correct location.
+  3  | Faisal Menon       | Customer Success Associate    |  8yr| Delhi NCR    |  95   | Excellent match with experience, skills, and customer
+     |                    |                               |     |              |       | success focus.
+  4  | Sanjana Jain       | Associate Product Manager     |  3yr| Bangalore    |  95   | Title related, 3 years exp, correct industry/location,
+     |                    |                               |     |              |       | strong analytical skills.
+  5  | Rahul Mukherjee    | Senior Customer Success Mgr   |  8yr| Hyderabad    |  95   | Senior CSM title, 8 years exp, relevant industry,
+     |                    |                               |     |              |       | strong skills.
+  6  | Riya Patel         | Head of Customer Success      | 12yr| Noida        |  95   | Excellent match with experience, industry, and relevant
+     |                    |                               |     |              |       | skills for CSM role.
+  7  | Arjun Das          | Customer Success Associate    |  7yr| Remote       |  92   | Very strong match: relevant experience, financial
+     |                    |                               |     |              |       | industry, account management skills.
+  8  | Ramya Das          | Customer Success Manager      |  3yr| Delhi NCR    |  90   | Meets experience and location requirements with relevant
+     |                    |                               |     |              |       | CSM skills.
+  9  | Farhan Malhotra    | Senior Customer Success Mgr   |  5yr| Delhi NCR    |  90   | Strong match: 5 years experience in related industry
+     |                    |                               |     |              |       | (insurance), strong account management skills.
+ 10  | Deepak Patel       | Customer Success Specialist   |  7yr| Delhi NCR    |  90   | Strong match with experience, skills, and location;
+     |                    |                               |     |              |       | relevant customer focus.
+ 11  | Gaurav Iyer        | Implementation Manager        | 12yr| Bangalore    |  90   | Significant experience, relevant skills in financial
+     |                    |                               |     |              |       | services, title slightly different.
+ 12  | Arpit Malhotra     | Customer Success Manager      |  —  | Remote       |  90   | Direct title match and relevant skills. Experience
+     |                    |                               |     |              |       | assumed sufficient (missing data).
+ 13  | Hari Nair          | Strategic Account Manager     |  —  | Delhi NCR    |  90   | Excellent match with financial services industry,
+     |                    |                               |     |              |       | location, and relevant skills.
+ 14  | Meera Patel        | Customer Success Associate    | 10yr| Remote       |  90   | Excellent match with CS title, experience, and
+     |                    |                               |     |              |       | relevant skills.
+ 15  | Payal Agarwal      | Customer Success Lead         |  3yr| Mumbai       |  90   | Excellent match with experience (3 years), relevant
+     |                    |                               |     |              |       | skills, and customer focus.
+ 16  | Payal Mishra       | Customer Success Associate    | 12yr| Hyderabad    |  90   | Excellent experience and strong skills like Data
+     |                    |                               |     |              |       | Analysis and QBRs.
+ 17  | Sourav Singh       | Head of Customer Success      |  9yr| Noida        |  90   | Excellent experience and senior title. Skills align
+     |                    |                               |     |              |       | well with CSM role.
+ 18  | Ishaan Dubey       | Support Team Lead             |  —  | Bangalore    |  90   | Excellent match with industry and location. Skills
+     |                    |                               |     |              |       | align well with CSM role.
+ 19  | Gaurav Ghosh       | Customer Success Manager      |  7yr| Delhi NCR    |  85   | Strong match: relevant title, 7 years exp, location
+     |                    |                               |     |              |       | match. Skills align well.
+ 20  | Rahul Iyer         | Senior Customer Success Mgr   |  9yr| Delhi NCR    |  85   | Strong match: high experience and relevant skills.
+     |                    |                               |     |              |       | Industry slightly off target.
 ```
+
+---
+
+## Key Observations
+
+### 1. Missing Data Handled Gracefully
+- **Arpit Malhotra** (rank 12) and **Hari Nair** (rank 13) have `null` experience — still scored 90. The LLM assumed sufficient experience from their title and skills.
+- **Ishaan Dubey** (rank 18) has `null` experience — scored 90 based on industry, location, and skills.
+
+### 2. Remote Candidates Get Fair Scores
+- **Arjun Menon** (rank 1, Remote) scored 98 — top match because location wasn't a barrier.
+- **Arpit Malhotra** (rank 12, Remote) scored 90 with direct title match.
+
+### 3. Related Titles Recognized
+- **Sanjana Jain** (Associate Product Manager, rank 4) scored 95 — title is different but related.
+- **Gaurav Iyer** (Implementation Manager, rank 11) scored 90 — transferable skills recognized.
+
+### 4. Location Flexibility
+- Candidates in **Hyderabad**, **Mumbai**, and **Noida** still scored well — LLM recognized proximity or remote flexibility.
 
 ---
 
 ## Summary
 
 - **Total candidates in dataset:** 500
-- **Candidates shortlisted by pre-filter:** 87
-- **Candidates scoring above 50/100:** 32
+- **Candidates scoring above 50/100:** 20+
 - **Top 20 returned:** 20
-- **Auto-broaden triggered:** No (32 good candidates found in initial search)
+- **Auto-broaden triggered:** No
+- **Model used:** Local LM Studio (results vary by model)
 
 ---
 
-## Response JSON (Truncated)
+## Full Response JSON
 
 ```json
 {
@@ -75,24 +94,184 @@ Rank | Name               | Title                         | Exp | Location     |
   "results": [
     {
       "rank": 1,
-      "name": "Suresh Nair",
+      "name": "Arjun Menon",
       "title": "Customer Success Manager",
-      "location": "Delhi NCR",
-      "experience": 4,
-      "score": 92,
-      "reason": "CSM title matches, financial services industry, 4yr experience meets 3yr minimum, located in Delhi NCR"
+      "location": "Remote",
+      "experience": 12,
+      "score": 98,
+      "reason": "Near perfect match: 12 years experience in financial services and remote location."
     },
     {
       "rank": 2,
-      "name": "Priya Sharma",
-      "title": "Customer Success Manager",
+      "name": "Riya Chopra",
+      "title": "Senior Customer Success Manager",
       "location": "Bangalore",
+      "experience": 4,
+      "score": 95,
+      "reason": "Excellent match: 4 years experience, relevant skills (Salesforce, Onboarding), correct location."
+    },
+    {
+      "rank": 3,
+      "name": "Faisal Menon",
+      "title": "Customer Success Associate",
+      "location": "Delhi NCR",
+      "experience": 8,
+      "score": 95,
+      "reason": "Excellent match with experience, skills, and customer success focus."
+    },
+    {
+      "rank": 4,
+      "name": "Sanjana Jain",
+      "title": "Associate Product Manager",
+      "location": "Bangalore",
+      "experience": 3,
+      "score": 95,
+      "reason": "Excellent match: Title related, 3 years exp, correct industry/location, strong analytical skills."
+    },
+    {
+      "rank": 5,
+      "name": "Rahul Mukherjee",
+      "title": "Senior Customer Success Manager",
+      "location": "Hyderabad",
+      "experience": 8,
+      "score": 95,
+      "reason": "Excellent match: Senior CSM title, 8 years exp, relevant industry, strong skills."
+    },
+    {
+      "rank": 6,
+      "name": "Riya Patel",
+      "title": "Head of Customer Success",
+      "location": "Noida",
+      "experience": 12,
+      "score": 95,
+      "reason": "Excellent match with experience, industry, and relevant skills for CSM role."
+    },
+    {
+      "rank": 7,
+      "name": "Arjun Das",
+      "title": "Customer Success Associate",
+      "location": "Remote",
+      "experience": 7,
+      "score": 92,
+      "reason": "Very strong match: Relevant experience, financial industry, account management skills."
+    },
+    {
+      "rank": 8,
+      "name": "Ramya Das",
+      "title": "Customer Success Manager",
+      "location": "Delhi NCR",
+      "experience": 3,
+      "score": 90,
+      "reason": "Excellent match: Meets experience and location requirements with relevant CSM skills."
+    },
+    {
+      "rank": 9,
+      "name": "Farhan Malhotra",
+      "title": "Senior Customer Success Manager",
+      "location": "Delhi NCR",
       "experience": 5,
       "score": 90,
-      "reason": "CSM in fintech, 5yr exp exceeds requirements, Bangalore location, relevant skills in CRM"
+      "reason": "Strong match: 5 years experience in related industry (insurance), strong account management."
+    },
+    {
+      "rank": 10,
+      "name": "Deepak Patel",
+      "title": "Customer Success Specialist",
+      "location": "Delhi NCR",
+      "experience": 7,
+      "score": 90,
+      "reason": "Strong match with experience, skills, and location; relevant customer focus."
+    },
+    {
+      "rank": 11,
+      "name": "Gaurav Iyer",
+      "title": "Implementation Manager",
+      "location": "Bangalore",
+      "experience": 12,
+      "score": 90,
+      "reason": "Strong match: Significant experience, relevant skills in financial services."
+    },
+    {
+      "rank": 12,
+      "name": "Arpit Malhotra",
+      "title": "Customer Success Manager",
+      "location": "Remote",
+      "experience": null,
+      "score": 90,
+      "reason": "Direct title match and relevant skills. Experience assumed sufficient for CSM role."
+    },
+    {
+      "rank": 13,
+      "name": "Hari Nair",
+      "title": "Strategic Account Manager",
+      "location": "Delhi NCR",
+      "experience": null,
+      "score": 90,
+      "reason": "Excellent match with financial services industry, location, and relevant skills."
+    },
+    {
+      "rank": 14,
+      "name": "Meera Patel",
+      "title": "Customer Success Associate",
+      "location": "Remote",
+      "experience": 10,
+      "score": 90,
+      "reason": "Excellent match with CS title, experience, and relevant skills."
+    },
+    {
+      "rank": 15,
+      "name": "Payal Agarwal",
+      "title": "Customer Success Lead",
+      "location": "Mumbai",
+      "experience": 3,
+      "score": 90,
+      "reason": "Excellent match with experience (3 years), relevant skills, and customer focus."
+    },
+    {
+      "rank": 16,
+      "name": "Payal Mishra",
+      "title": "Customer Success Associate",
+      "location": "Hyderabad",
+      "experience": 12,
+      "score": 90,
+      "reason": "Excellent experience and strong skills like Data Analysis and QBRs."
+    },
+    {
+      "rank": 17,
+      "name": "Sourav Singh",
+      "title": "Head of Customer Success",
+      "location": "Noida",
+      "experience": 9,
+      "score": 90,
+      "reason": "Excellent experience and senior title. Skills align well with CSM role."
+    },
+    {
+      "rank": 18,
+      "name": "Ishaan Dubey",
+      "title": "Support Team Lead",
+      "location": "Bangalore",
+      "experience": null,
+      "score": 90,
+      "reason": "Excellent match with industry and location. Skills align well with CSM role."
+    },
+    {
+      "rank": 19,
+      "name": "Gaurav Ghosh",
+      "title": "Customer Success Manager",
+      "location": "Delhi NCR",
+      "experience": 7,
+      "score": 85,
+      "reason": "Strong match: Relevant title, 7 years exp, location match. Skills align well."
+    },
+    {
+      "rank": 20,
+      "name": "Rahul Iyer",
+      "title": "Senior Customer Success Manager",
+      "location": "Delhi NCR",
+      "experience": 9,
+      "score": 85,
+      "reason": "Strong match: High experience and relevant skills. Industry slightly off target."
     }
   ]
 }
 ```
-
-> **Note:** This is a representative sample. Actual results will vary based on your specific LLM model and its scoring behavior.

@@ -8,18 +8,33 @@ Built for the **SkillVeda Engineering Assignment (Junior)**.
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Architecture](#architecture)
-- [Tech Stack](#tech-stack)
-- [Setup Instructions](#setup-instructions)
-- [Configuration](#configuration)
-- [API Usage](#api-usage)
-- [How It Works (Deep Dive)](#how-it-works-deep-dive)
-- [Handling Missing Data](#handling-missing-data)
-- [Sample Run](#sample-run)
-- [Running Tests](#running-tests)
-- [What I'd Improve With More Time](#what-id-improve-with-more-time)
-- [Project Structure](#project-structure)
+- [🎯 Candidate Finder API](#-candidate-finder-api)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [✨ Features](#-features)
+  - [🏗️ Architecture](#️-architecture)
+  - [🛠️ Tech Stack](#️-tech-stack)
+  - [🔧 Setup Instructions](#-setup-instructions)
+    - [Prerequisites](#prerequisites)
+    - [Steps](#steps)
+  - [⚙️ Configuration](#️-configuration)
+  - [📡 API Usage](#-api-usage)
+    - [Endpoints](#endpoints)
+    - [Search Example](#search-example)
+    - [Response](#response)
+    - [Auto-broaden (Bonus Feature)](#auto-broaden-bonus-feature)
+  - [🧠 How It Works (Deep Dive)](#-how-it-works-deep-dive)
+    - [Step 1: Parse the Requirement](#step-1-parse-the-requirement)
+    - [Step 2: Pre-filter with Rules](#step-2-pre-filter-with-rules)
+    - [Step 3: Score with LLM](#step-3-score-with-llm)
+    - [Step 4: Rank \& Return](#step-4-rank--return)
+    - [Bonus: Auto-broaden](#bonus-auto-broaden)
+  - [🛡️ Handling Missing Data](#️-handling-missing-data)
+    - [How This Plays Out in Code](#how-this-plays-out-in-code)
+  - [📊 Sample Run](#-sample-run)
+    - [Quick Preview](#quick-preview)
+  - [🧪 Running Tests](#-running-tests)
+  - [💡 What I'd Improve With More Time](#-what-id-improve-with-more-time)
+  - [📁 Project Structure](#-project-structure)
 
 ---
 
@@ -143,6 +158,9 @@ uvicorn main:app --reload
 The API will be available at **http://localhost:8000**.
 Open **http://localhost:8000/docs** for the interactive Swagger UI.
 
+![API Server Running](screenshots/api-terminal.png)
+*Figure 1: API server starting up — 500 candidates loaded, connected to LM Studio*
+
 ---
 
 ## ⚙️ Configuration
@@ -168,6 +186,12 @@ All configuration is done via environment variables (or `.env` file):
 | `GET` | `/` | Health check |
 | `POST` | `/search` | Search candidates |
 | `GET` | `/docs` | Swagger UI (interactive docs) |
+
+![Swagger UI](screenshots/swagger-ui.png)
+*Figure 2: Swagger UI with the /search endpoint — interactive API docs*
+
+![Search Results](screenshots/search-results.png)
+*Figure 3: Top 20 search results with LLM-scored candidates — scores and reasons visible*
 
 ### Search Example
 
